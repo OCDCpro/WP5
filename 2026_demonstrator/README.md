@@ -1,5 +1,5 @@
-# chip-challenge
-Collections and ideas for the chip challenge
+# ChipCup FUTURE IDEAs
+Collections and ideas for the future ChipCup
 
 # Challenge - Ideen:
 ## Security: Access system - Door key
