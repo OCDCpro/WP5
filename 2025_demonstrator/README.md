@@ -39,3 +39,5 @@ Microchip for the ChipCup. To be inserted into the HW-Kit.
 * I2C / SPI
 
 #### Example Schematics:
+
+* HW-Kit ChipCup
