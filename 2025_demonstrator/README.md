@@ -20,6 +20,11 @@ Microchip for the ChipCup. To be inserted into the HW-Kit.
 * Security by design
 * Verification 
 
+#### Packaging
+
+* Package name
+* Package drawing
+
 #### Clock / Reset
 
 * Should run with XXX MHz. 
@@ -41,3 +46,9 @@ Microchip for the ChipCup. To be inserted into the HW-Kit.
 #### Example Schematics:
 
 * HW-Kit ChipCup
+
+#### GDS
+
+* Padframe
+* IO Pin Positions
+* Sealring
