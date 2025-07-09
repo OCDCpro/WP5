@@ -2,14 +2,12 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Put this on the RPi Pico controlling the RFID chip, not the RP2040 on the TT04 dev board!
+# Put this on the RPi Pico controlling the RFID chip, NOT the RP2040 on the TT04 dev board!
 
-# TT04 BOARD SETUP
-"""
-TT04 project 17 : Digital Cipher & Interlock System
-"""
+# This script writes the secret door code to an NFC card.
 
-secret = 0b10110101
+secret = 0b10110101 # B5 in hex
+secret_bytearray = bytearray(b'\x00\xB5\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
 
 # IMPORTS
 import board
@@ -31,7 +29,7 @@ pn532.SAM_configuration()
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
-# Check the block of data to the card
+# Write a block of data to the card
 
 print("Present a card to write to the NFC board")
 while True:
@@ -46,12 +44,19 @@ while True:
         led.value = True
         break
 
+print("Writing card...")
+successFormating = pn532.mifare_classic_write_block(4, secret_bytearray)
+if successFormating:
+    print("Card formatted successfully")
+else:
+    print("Card formatting failed")
+    led.value = False
 
 print("Reading card...")
-blockRead = pn532.mifare_classic_get_value_block(4)
+blockRead = pn532.mifare_classic_read_block(4)
 if blockRead is None:
     print("Card read failed")
 else:
     print("Card read successfully")
-    print("Data in block 4: ", blockRead)
-    print("target: ", hex(secret))
+    print("Data in block 4: ", hex(blockRead[1]))
+    print("Target: ", hex(secret))
