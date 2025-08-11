@@ -3,8 +3,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # Put this on the RPi Pico controlling the RFID chip, NOT the RP2040 on the TT04 dev board!
-
-# This script continuously reads an NFC card and sends the door code saved on it to the TT04 board.
+"""
+This script continuously looks for an NFC card and if it finds one, reads the door code saved on it and sends it to the TT04 board.
+"""
 
 # IMPORTS
 import board
@@ -45,18 +46,11 @@ dout6.direction = digitalio.Direction.OUTPUT
 dout7 = digitalio.DigitalInOut(board.GP13)
 dout7.direction = digitalio.Direction.OUTPUT
 
-# TT04 BOARD SETUP
-"""
-TT04 project 17 : Digital Cipher & Interlock System
-MUX: 10110101
-"""
-
-
 print("Present a card open the door")
 while True:
     uid = pn532.read_passive_target(timeout=0.5)
     if uid is None: # Try again if no card is available.
-        led.value = False # turn everything off
+        led.value = False   # turn everything off
         dout0.value = False
         dout1.value = False
         dout2.value = False
@@ -68,14 +62,13 @@ while True:
         continue
     if uid is not None:
         print("Card detected")
-        #print("Card UID: ", uid.hex())
         
         print("Reading card...")
         blockRead = pn532.mifare_classic_read_block(4) # reads from block 4, which is where the door code is saved
         if blockRead is None:
-            print("Card read failed") # defective chip, card moved, or not formatted
+            print("Card read failed") # defective chip, card was moved, or not formatted
         else:
-            #print("Card read successfully")
+            print("Card read successfully")
             led.value = True
             entered_key = blockRead[1]
             print(bin(entered_key))
