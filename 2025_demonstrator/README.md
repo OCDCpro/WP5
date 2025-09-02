@@ -23,6 +23,8 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 | Pin14 | Status 2  | Output |
 | Pin15 | Status 3  | Output |
 
+![QFN2 pinout v0.1 2025-09-02](QFN_24_pins_v0.1_250902.png)
+
 #### Functionality
 
 * Doorlock
