@@ -34,7 +34,7 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 #### Packaging
 
 * Package name:
-  * QFN-24 or QFN-32 or QFN-48   
+  * **QFN-24** or QFN-32 or QFN-48   
 * Package drawing
 
 #### Clock / Reset
