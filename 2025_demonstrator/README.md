@@ -45,8 +45,8 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 #### External components
 
 * Memory Chip for Key Storage:
-  * To be defined
   * GD25Q16: SPI-FLASH-2MB ???
+  * https://github.com/OCDCpro/WP5/blob/main/2025_demonstrator/Memorychip/GD25Q16_SPI_flash_2MB.pdf
 * NFC Reader:
   * RC522
 
