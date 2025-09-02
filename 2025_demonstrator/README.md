@@ -18,13 +18,11 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 | Pin9  | SPI CS1   | Output |
 | Pin10 | SPI CS2   | Output |
 | Pin11 | SPI CS3   | Output |
-| Pin12 | Doorlock  | Output |
-| Pin13 | Status 1  | Output |
-| Pin14 | Status 2  | Output |
-| Pin15 | Status 3  | Output |
-
-
-
+| Pin12 | SPI CS4   | Output |
+| Pin13 | Doorlock  | Output |
+| Pin14 | Status 1  | Output |
+| Pin15 | Status 2  | Output |
+| Pin16 | Status 3  | Output |
 
 #### Functionality
 
