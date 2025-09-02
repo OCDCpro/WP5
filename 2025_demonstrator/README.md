@@ -1,18 +1,30 @@
-# Chip specs / Datasheet
+# LAYR: Chip specs / Datasheet
 
 #### Description
 
-Microchip for the ChipCup. To be inserted into the HW-Kit.
-
+Microchip for the LAYR. To be inserted into the HW-Kit.
 
 #### Pins
-| Name | Function | IO |
-|:---- | :---- | :---- |
-| Pin1 | CLK   | Input |
-| Pin2 | Reset | Input |
-| .... |       |       |
-| PinX | SDA   | Output  |
-| .... | ....  | ... |
+| Name  | Function | IO |
+|:----  | :----     | :---- |
+| Pin1  | VCC       | Input |
+| Pin2  | GND       | Input |
+| Pin3  | CLK       | Input |
+| Pin4  | Reset     | Input |
+| Pin5  | Reset     | Input |
+| Pin6  | SPI SCLK  | Output |
+| Pin7  | SPI MISO  | Input |
+| Pin8  | SPI MOSI  | Output |
+| Pin9  | SPI CS1   | Output |
+| Pin10 | SPI CS2   | Output |
+| Pin11 | SPI CS3   | Output |
+| Pin12 | Doorlock  | Output |
+| Pin13 | Status 1  | Output |
+| Pin14 | Status 2  | Output |
+| Pin15 | Status 3  | Output |
+
+
+
 
 #### Functionality
 
@@ -22,7 +34,8 @@ Microchip for the ChipCup. To be inserted into the HW-Kit.
 
 #### Packaging
 
-* Package name
+* Package name:
+  * QFN-24 or QFN-32 or QFN-48   
 * Package drawing
 
 #### Clock / Reset
@@ -32,20 +45,24 @@ Microchip for the ChipCup. To be inserted into the HW-Kit.
 
 #### External components
 
-* Memory Chip ?
-* NFD Reader ?
+* Memory Chip for Key Storage:
+  * To be defined 
+* NFC Reader:
+  * RC522
 
-#### Interfaces
+#### Communication Interfaces
 
-* Memory Interface?
+* SPI:
+  * NFC Reader RC522
+  * Memory Chip for Key Storage   
 
 #### Protocols
 
-* I2C / SPI
+* OCDCpro Javacard Access Control Protocol (by Niklas Höher / nhoeher) 
 
 #### Example Schematics:
 
-* HW-Kit ChipCup
+* HW-Kit LAYR
 
 #### GDS
 
