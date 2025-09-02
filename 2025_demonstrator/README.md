@@ -45,7 +45,8 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 #### External components
 
 * Memory Chip for Key Storage:
-  * To be defined 
+  * To be defined
+  * GD25Q16: SPI-FLASH-2MB ???
 * NFC Reader:
   * RC522
 
