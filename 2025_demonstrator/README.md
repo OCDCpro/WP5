@@ -57,11 +57,11 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 
 #### Protocols
 
-* OCDCpro Javacard Access Control Protocol (by Niklas Höher / nhoeher) 
+* OCDCpro Javacard Access Control Protocol (by Niklas Höher RUB / nhoeher) 
 
 #### Example Schematics:
 
-* HW-Kit LAYR
+* HW-Kit LAYR (HSRM)
 
 #### GDS
 
