@@ -4,6 +4,12 @@
 
 Microchip for the LAYR. To be inserted into the HW-Kit.
 
+#### Functionality
+
+* Doorlock
+* Security by design
+* Verification 
+
 #### Pins
 | Name  | Function | IO |
 |:----  | :----     | :---- |
@@ -23,14 +29,9 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 | Pin14 | Status 2  | Output |
 | Pin15 | Status 3  | Output |
 
-![QFN2 pinout v0.1 2025-09-02](QFN_24_pins_v0.1_250902.png)
-
-#### Functionality
-
-* Doorlock
-* Security by design
-* Verification 
-
+#### Packaging pinout
+If QFN-24 is the packaging, this could be the pinout:
+![QFN2 pinout v0.1 2025-09-02](pics/QFN_24_pins_v0.1_250902.png)
 #### Packaging
 
 * Package name:
@@ -39,22 +40,29 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 
 #### Clock / Reset
 
-* Should run with XXX MHz. 
+* Clockspeed: XXX MHz. 
 * Reset is not inverted.
 
 #### External components
 
 * Memory Chip for Key Storage:
-  * GD25Q16: SPI-FLASH-2MB ???
-  * https://github.com/OCDCpro/WP5/blob/main/2025_demonstrator/Memorychip/GD25Q16_SPI_flash_2MB.pdf
+  * SPI-FLASH-2MB: GD25Q16 ???
+  * [GD25Q16 datasheet](https://github.com/OCDCpro/WP5/blob/main/2025_demonstrator/Memorychip/GD25Q16_SPI_flash_2MB.pdf)
 * NFC Reader:
   * RC522
+  * [NXP MFRC522](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
+* Doorlock (electronic-mechanical)
+* Status Indicators (3 x LEDs)
 
 #### Communication Interfaces
 
 * SPI:
   * NFC Reader RC522
   * Memory Chip for Key Storage   
+* Doorlock:
+  * Pin high opens the door
+* Status Indicators (LEDs):
+  * Pin high lights the LED
 
 #### Protocols
 
@@ -66,6 +74,5 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 
 #### GDS
 
-* Padframe
-* IO Pin Positions
-* Sealring
+* Padframe, IO Pin Positions, Sealring (IHP ?)
+ 
