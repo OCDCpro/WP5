@@ -2,6 +2,11 @@
 
 ## OCDCpro Workpackage 5
 
+#### Goals:
+* Prototyping the complete cycle from design to the microchip of a future design challenge. Physical hardware including a 130nm microchip gets created.
+* Integration of other the workpackages into hardware for evalutation.
+* Evaluation of the created hardware in regards to future challenges.
+
 #### Sub-Workpackages:
 * Sub-WP 5.1: Development of the Hardware Kit (Demonstrator system)
 * Sub-WP 5.2: Microchip design creation by the challenge teams
