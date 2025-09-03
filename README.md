@@ -15,7 +15,7 @@
 
 #### Milestones:
 
-* **10/2025 (MS D):** Design of the hardware kit
+* **10/2025 (MS D):** Design of the hardware kit (LAYR 2025: Hardware Kit)
 * **04/2026 (MS E):** Microchip designs by the teams are ready
 * **10/2026 (MS F):** Succesfull Tapeout of the designs
 * **04/2027 (MS G):** Evaluation of the hardware kit ready
