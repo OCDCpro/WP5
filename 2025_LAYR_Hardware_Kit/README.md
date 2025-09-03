@@ -12,13 +12,13 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 
 #### Pins
 | Name  | Function | IO |
-|:----  | :----     | :---- |
-| Pin1  | VCC       | Input |
-| Pin2  | GND       | Input |
-| Pin3  | CLK       | Input |
-| Pin4  | Reset     | Input |
+|:----  | :----     | :----  |
+| Pin1  | VCC       | Input  |
+| Pin2  | GND       | Input  |
+| Pin3  | CLK       | Input  |
+| Pin4  | Reset     | Input  |
 | Pin5  | SPI SCLK  | Output |
-| Pin6  | SPI MISO  | Input |
+| Pin6  | SPI MISO  | Input  |
 | Pin7  | SPI MOSI  | Output |
 | Pin8  | SPI CS1   | Output |
 | Pin9  | SPI CS2   | Output |
@@ -28,10 +28,15 @@ Microchip for the LAYR. To be inserted into the HW-Kit.
 | Pin13 | Status 1  | Output |
 | Pin14 | Status 2  | Output |
 | Pin15 | Status 3  | Output |
+| Pin16 | UART RX   | Input  |
+| Pin17 | UART TX   | Output |
+| Pin18 | UART CLK  | Input  |
+
+
 
 #### Packaging pinout
 If QFN-24 is the packaging, this could be the pinout:
-![QFN2 pinout v0.1 2025-09-02](pics/QFN_24_pins_v0.1_250902.png)
+![QFN2 pinout v0.2 2025-09-03](pics/QFN_24_pins_v0.2_250903.png)
 #### Packaging
 
 * Package name:
