@@ -15,9 +15,15 @@
 * **10/2026 (MS F):** Succesfull Tapeout of the designs
 * **04/2027 (MS G):** Evaluation of the hardware kit ready
 
+#### OCDCpro Website
+
+[https://ocdcpro.de/](https://ocdcpro.de/)
+
+#### LAYR 2025 Website
+
+t.b.a.
+
 ## LAYR 2025: Hardware Kit
 
-The hardware kit for **LAYR 2025: Open chip challenge** resides in a subfolder of this respoitroy with the name 
-```
-2025_LAYR_Hardware_Kit
-```
+The hardware kit for **LAYR 2025: Open chip challenge** resides in a subfolder of this respoitroy with the name [2025_LAYR_Hardware_Kit](https://github.com/OCDCpro/WP5/tree/main/2025_LAYR_Hardware_Kit)
+
