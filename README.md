@@ -1,4 +1,4 @@
-# Hardware Kit with a 130nm microchip
+# WP5: Hardware Kit with a 130nm microchip
 
 ## OCDCpro Workpackage 5
 
